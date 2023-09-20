@@ -38,7 +38,7 @@
 
 	--autocomplete-popup-background: #000000 !important;
 	--autocomplete-popup-color: var(--uwp-global-front) !important;
-	--autocomplete-popup-highlight-background: AccentColor !important;
+	--autocomplete-popup-highlight-background: #252525 !important;
 	--autocomplete-popup-highlight-color: AccentColorText !important;
 
 	--panelview-toolbarbutton-hover-bgcolor: #404040 !important;

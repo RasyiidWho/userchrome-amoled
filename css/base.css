@@ -111,7 +111,7 @@
 		transition: background-color 83ms !important;
 	}
 	.tabbrowser-tab[selected="true"] > .tab-stack > .tab-background {
-		background-color: #1A1A1A !important;
+		background-color: #252525 !important;
 		border-radius: 10px !important;
 	}
 	.tabbrowser-tab:hover > .tab-stack > .tab-background {
@@ -634,6 +634,7 @@ panel[position*="bottomleft"] {
 	}
 	.urlbarView-row[selected] .urlbarView-no-wrap, .urlbarView-results[wrap] .urlbarView-row[selected] .urlbarView-url {
 		margin-left: 10px !important;
+		
 	}
 }
 .urlbarView-body-inner {

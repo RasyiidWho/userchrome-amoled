@@ -1,0 +1,112 @@
+/*AGENT_SHEET*/
+
+/* MDL2 */
+/* Base Theme */
+@import url(./css/base.css);
+
+/* Pop-ups, Context Menus, Dropdowns, etc */
+@import url(./css/context.css);
+
+/* Base Tags Theme */
+@import url(./css/tags.css);
+
+/* Pages */
+@import url(./css/pagesChrome.css);
+
+/* Styles */
+@import url(./css/styles/mdl2.css);
+@import url(./css/styles/sun-valley.css);
+
+/*
+@supports -moz-bool-pref("pref.here") {
+*/
+
+/* Custom CSS for userChrome.css */
+@import url(./customChrome.css);
+
+
+/* autoscroller */
+.autoscroller {
+    width: 1px;
+    height: 1px;
+	opacity: 0.5 !important;
+	background-color: white !important;
+	background: no-repeat center var(--autoscroll-background-image);
+	padding: 15px !important;
+	/* outline: red inset 200px !important; */
+	/*box-shadow: 0 0 20px 0px rgba(0,0,0,0.75) inset;*/
+	clip-path: circle(40% at 50% 50%) !important;
+}
+
+#tracking-protection-icon-box {
+    display: none;
+}
+
+#tracking-protection-icon-container {
+    display: none;
+}
+
+#page-action-buttons { display: none !important;}
+
+.tabs-newtab-button {
+    display: none !important;
+}
+
+
+.logo-and-wordmark{ display: none !important; }
+
+@-moz-document url("about:home"), url("about:newtab"), url(about:privatebrowsing){
+    .logo-and-wordmark{ display: none !important; }
+}
+
+@-moz-document url("about:newtab") { 
+
+    div.logo-and-wordmark {
+        margin-bottom: 1px !important;
+        height: 1px !important;
+        visibility: hidden;
+            }
+    }
+    @-moz-document url("about:home") { 
+    
+    div.logo-and-wordmark {
+        margin-bottom: 1px !important;
+        height: 1px !important;
+        visibility: hidden;
+            }
+    }
+
+
+    /* :root{scrollbar-color: currentColor transparent !important;} */
+
+* {
+    scrollbar-color: currentColor transparent !important;
+    scrollbar-width: thin !important;
+}
+
+/* Hide Extension Name Unless Site Identity Area is Hovered */
+#identity-box.extensionPage:not(:hover) #identity-icon-labels {
+    display: none !important;
+  }
+  #identity-box.extensionPage:hover #identity-icon-labels {
+    max-width: 300px !important;
+  }
+
+#unified-extensions-button,
+#unified-extensions-button > .toolbarbutton-icon{
+    opacity:0;
+}
+
+
+.tabbrowser-tab[label="New Tab"] .tab-icon-image {display:none!important;}
+/* border */
+/* .autoscroller::after {
+	display: block;
+	content: "";
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #1110;
+	border: inset #111d 2px;
+	translate: -12px -34px
+} */

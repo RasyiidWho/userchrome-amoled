@@ -1,0 +1,56 @@
+/**/
+@supports not -moz-bool-pref("uwp.sun-valley") {
+@media (prefers-color-scheme: dark) {
+:root {
+	--uwp-mainwindow: black;
+	--uwp-tabbar-tab-hover: #000000;
+	--uwp-tabbar-button-hover: #000000;
+	--uwp-tabbar-button-hover-active: #444;
+	--uwp-navbar-background-hover: #000000;
+	--uwp-browser: #000;
+	--uwp-findbar: #161616;
+	--uwp-autocomplete-list: #000000;
+	--uwp-urlbar: transparent;
+	--uwp-urlbar-blur: #000000C0;
+	--uwp-autocomplete-oneoffs: #000000;
+	--uwp-sidebar: #000000;
+	--uwp-sidebar-search: black;
+	--uwp-sidebar-box: black;
+	--uwp-statuspanel: #000000;
+	--uwp-statuspanel-color: lightgray;
+	--uwp-navbar-button-hover: #555555;
+	
+	--titlebar-min-max-hover-bg-color: rgba(42, 42, 42, 1);
+	--titlebar-min-max-active-bg-color: #444;
+	--titlebar-close-hover-bg-color: #E81123;
+	--titlebar-close-active-bg-color: #F06F79;
+	--arrowpanel-background: #000000 !important;
+	--arrowpanel-dimmed: #3C3C3C !important;
+	--chrome-background-color: black !important;
+	--chrome-secondary-background-color: #000000 !important;
+	--toolbar-bgcolor: #000000 !important;
+	--toolbar-color: var(--uwp-global-front) !important;
+	--toolbarbutton-icon-fill-attention: AccentColor !important;
+
+	--uwp-bottom-background: #161616;
+	
+	--uwp-titlebar: white;
+
+	--autocomplete-popup-background: #000000 !important;
+	--autocomplete-popup-color: var(--uwp-global-front) !important;
+	--autocomplete-popup-highlight-background: AccentColor !important;
+	--autocomplete-popup-highlight-color: AccentColorText !important;
+
+	--panelview-toolbarbutton-hover-bgcolor: #404040 !important;
+	--panelview-toolbarbutton-active-bgcolor: #606060 !important;
+	--button-hover-bgcolor: var(--panelview-toolbarbutton-hover-bgcolor) !important;
+	--button-active-bgcolor: var(--panelview-toolbarbutton-active-bgcolor) !important;
+
+	--lwt-sidebar-background-color: var(--uwp-global-back) !important;
+}
+
+:root:-moz-window-inactive {
+	--uwp-titlebar: #CCCCCC;
+}
+}
+}

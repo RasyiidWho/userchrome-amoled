@@ -46,42 +46,26 @@
     display: none;
 }
 
-#page-action-buttons { display: none !important;}
+/* #page-action-buttons { display: none !important;} */
+
+#pageActionSeparator {
+  display: none !important;
+ 
+ }
+#page-action-buttons {
+  display: none !important;
+}
 
 .tabs-newtab-button {
     display: none !important;
 }
-
-
-.logo-and-wordmark{ display: none !important; }
-
-@-moz-document url("about:home"), url("about:newtab"), url(about:privatebrowsing){
-    .logo-and-wordmark{ display: none !important; }
-}
-
-@-moz-document url("about:newtab") { 
-
-    div.logo-and-wordmark {
-        margin-bottom: 1px !important;
-        height: 1px !important;
-        visibility: hidden;
-            }
-    }
-    @-moz-document url("about:home") { 
-    
-    div.logo-and-wordmark {
-        margin-bottom: 1px !important;
-        height: 1px !important;
-        visibility: hidden;
-            }
-    }
-
 
     /* :root{scrollbar-color: currentColor transparent !important;} */
 
 * {
     scrollbar-color: currentColor transparent !important;
     scrollbar-width: thin !important;
+    /* background-color: ; */
 }
 
 /* Hide Extension Name Unless Site Identity Area is Hovered */
@@ -112,6 +96,16 @@
   }
 
 ::-moz-selection {background-color: #252525 !important;}
+
+#TabsToolbar-customization-target toolbarbutton > .toolbarbutton-icon, #TabsToolbar-customization-target .toolbarbutton-text, #TabsToolbar-customization-target .toolbarbutton-badge-stack,#scrollbutton-up,#scrollbutton-down {
+  /* padding-top: 10px !important; 
+  padding-bottom: 10px !important;
+  padding-left: 12px !important;
+  padding-right: 12px !important; */
+  width: 24px !important;
+	height: 24px !important;
+}
+
 
 .tabbrowser-tab[label="New Tab"] .tab-icon-image {display:none!important;}
 /* border */

@@ -112,11 +112,11 @@
 	}
 	.tabbrowser-tab[selected="true"] > .tab-stack > .tab-background {
 		background-color: #252525 !important;
-		border-radius: 10px !important;
+		border-radius: 8px !important;
 	}
 	.tabbrowser-tab:hover > .tab-stack > .tab-background {
-		background-color: var(--uwp-button-background-hover) !important;
-		border: var(--uwp-button-border-hover) !important;
+		background-color: #252525 !important;
+		border-radius: 8px !important;
 	}
 	.tabbrowser-tab:hover:active > .tab-stack > .tab-background {
 		background-color: #000000 !important;
@@ -203,12 +203,12 @@
 }
 
 .tab-icon-overlay:not([pinned], [sharing], [crashed]):is([soundplaying], [muted]) {
-    width: var(--user-mute-button-height) !important;
-    height: var(--user-mute-button-height) !important;
-	left: 105px !important;
-	top: 1.5px !important;
-    margin-left: calc(var(--user-mute-button-height) / 2 + 2px) !important; /* pushes icon to the right */
-    margin-right: 2px !important; /* closes up some space before the text */
+    width: 12px !important;
+    height: 12px !important;
+	/* left: 105px !important; */
+	/* top: 1.5px !important; */
+    margin-left: 10px;
+    /* margin-right: -12px !important; */
     padding: 0 !important; /* allows icon to expand to full size */
 }
 

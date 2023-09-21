@@ -115,7 +115,7 @@
 		border-radius: 8px !important;
 	}
 	.tabbrowser-tab:hover > .tab-stack > .tab-background {
-		background-color: #252525 !important;
+		background-color: #151515 !important;
 		border-radius: 8px !important;
 	}
 	.tabbrowser-tab:hover:active > .tab-stack > .tab-background {

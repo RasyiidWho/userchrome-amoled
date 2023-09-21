@@ -48,10 +48,6 @@
 
 /* #page-action-buttons { display: none !important;} */
 
-#pageActionSeparator {
-  display: none !important;
- 
- }
 #page-action-buttons {
   display: none !important;
 }
@@ -95,7 +91,7 @@
     }
   }
 
-::-moz-selection {background-color: #252525 !important;}
+::-moz-selection {background-color: #3C3C3C !important;}
 
 #TabsToolbar-customization-target toolbarbutton > .toolbarbutton-icon, #TabsToolbar-customization-target .toolbarbutton-text, #TabsToolbar-customization-target .toolbarbutton-badge-stack,#scrollbutton-up,#scrollbutton-down {
   /* padding-top: 10px !important; 
@@ -106,8 +102,13 @@
 	height: 24px !important;
 }
 
+/* Hide i-in-a-circle with padlock... */
+#identity-box #identity-icon {
+  opacity:0;
+}
 
-.tabbrowser-tab[label="New Tab"] .tab-icon-image {display:none!important;}
+#identity-box.extensionPage label{display: none !important;}
+
 /* border */
 /* .autoscroller::after {
 	display: block;

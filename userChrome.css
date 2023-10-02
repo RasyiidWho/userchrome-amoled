@@ -24,6 +24,14 @@
 /* Custom CSS for userChrome.css */
 @import url(./customChrome.css);
 
+/* @import url(./css/hide_tabs_scrollbuttons.css); */
+
+.tabbrowser-tab {
+  min-width: initial !important;
+}
+.tab-content {
+  overflow: hidden !important;
+}
 
 /* autoscroller */
 .autoscroller {
